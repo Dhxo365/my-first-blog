@@ -1,0 +1,33 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <title>My Blog</title>
+  </head>
+  <body>
+    <header class="page-header">
+        <div class="container">
+            <h1> 
+                <a href="'/">Django someting</a>
+            </h1>
+        </div>
+        
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col">
+                {% block content %}
+                {% endblock %}
+
+            </div>
+        </div>
+    </main>
+    
+
+    
+    
+  </body>
+</html>
